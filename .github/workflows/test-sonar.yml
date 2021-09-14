@@ -23,5 +23,5 @@ jobs:
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.login=$SONAR
         env:
-          ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR: ${{ secrets.SONAR }}
