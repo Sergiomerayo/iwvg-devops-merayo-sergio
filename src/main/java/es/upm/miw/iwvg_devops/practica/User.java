@@ -21,7 +21,7 @@ public class User {
         this.id = id;
         this.name = name;
         this.familyName = familyName;
-        this.fractions = fractions;
+        this.fractions = new ArrayList<>(fractions);
     }
 
     public String getId() {
@@ -61,7 +61,7 @@ public class User {
     }
 
     public String initials() {
-        return this.name.substring(0, 1) + ".";
+        return this.name.charAt(0) + ".";
     }
 
     @Override
