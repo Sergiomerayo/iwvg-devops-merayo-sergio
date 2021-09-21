@@ -5,4 +5,8 @@ public class Fraction {
     public Fraction(){
 
     }
+
+    public Fraction (int a, int b){
+
+    }
 }
