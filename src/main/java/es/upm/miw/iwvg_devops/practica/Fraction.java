@@ -58,7 +58,7 @@ public class Fraction {
         Fraction result = new Fraction();
         result.numerator = this.numerator * fraction.denominator + fraction.numerator * this.denominator;
         result.denominator = this.denominator * fraction.denominator;
-        return fraction;
+        return result;
     }
 
     public Fraction multiply(Fraction fraction) {
