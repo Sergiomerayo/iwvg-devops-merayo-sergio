@@ -11,6 +11,4 @@ public class Searches {
                 .map(User::getFamilyName)
                 .distinct();
     }
-
-
 }
