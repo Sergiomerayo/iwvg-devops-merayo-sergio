@@ -19,4 +19,11 @@ public class SearchesTest {
         assertEquals(List.of(0.0, 1.0, 2.0, 0.2, -0.5, 0.5, 1.0), new Searches().findDecimalFractionByUserName("Oscar")
                 . collect(Collectors.toList()));
     }
+
+    @Test
+    void testFindUserFamilyNameInitialBySomeProperFraction() {
+        assertEquals(List.of("F", "B", "L", "B"), new Searches().findUserFamilyNameInitialBySomeProperFraction()
+                . collect(Collectors.toList()));
+    }
+
 }
