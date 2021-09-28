@@ -10,7 +10,7 @@ import java.util.List;
 public class SearchesTest {
     @Test
     void testFindUserFamilyNameBySomeImproperFraction() {
-        assertEquals(List.of("Fernandez", "Blanco", "López", "Torres"), new Searches().findUserFamilyNameBySomeImproperFraction()
+        assertEquals(List.of("Fernandez", "Blanco", "López", "Torres", "Blanco", "Torres"), new Searches().findUserFamilyNameBySomeImproperFraction()
                 .collect(Collectors.toList()));
     }
 

@@ -8,8 +8,7 @@ public class Searches {
         return new UsersDatabase().findAll()
                 .filter(user -> user.getFractions().stream()
                         .anyMatch(Fraction::isImproper))
-                .map(User::getFamilyName)
-                .distinct();
+                .map(User::getFamilyName);
     }
 
     public Stream<Double> findDecimalFractionByUserName(String name){
