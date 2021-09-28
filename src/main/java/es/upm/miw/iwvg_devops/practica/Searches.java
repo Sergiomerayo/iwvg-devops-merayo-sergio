@@ -24,6 +24,7 @@ public class Searches {
                         .anyMatch(Fraction::isProper))
                 .map(User::getFamilyName)
                 .map(s -> s.substring(0,1));
+
     }
 
     public Stream<Double> findDecimalImproperFractionByUserName(String name){
