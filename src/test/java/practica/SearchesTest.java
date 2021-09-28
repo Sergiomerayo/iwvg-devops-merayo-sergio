@@ -26,4 +26,9 @@ public class SearchesTest {
                 . collect(Collectors.toList()));
     }
 
+    @Test
+    void testFindDecimalImproperFractionByUserName() {
+        assertEquals(List.of(1.0, 2.0, -0.5, 1.0), new Searches().findDecimalImproperFractionByUserName("Oscar")
+                . collect(Collectors.toList()));
+    }
 }
